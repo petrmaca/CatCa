@@ -1,0 +1,11 @@
+TABA = base::readRDS(file.path(.datadir,"routing/TABA.Rds"))
+TABB = base::readRDS(file.path(.datadir,"routing/TABB.Rds"))
+REKY = rgdal::readOGR(file.path(.datadir,"geo/reky.shp"), "reky")
+JEZERA = rgdal::readOGR(file.path(.datadir,"geo/jezera.shp"), "jezera")
+NADRZE = rgdal::readOGR(file.path(.datadir,"geo/nadrze.shp"), "nadrze")
+POVODI = rgdal::readOGR(file.path(.datadir,"geo/povodi.shp"), "povodi")
+UPOVS = rgdal::readOGR(file.path(.datadir,"geo/UPOV_povodi.shp"), "UPOV_povodi")
+QD = base::readRDS(file.path(.datadir,"chmu/QD.Rds"))
+STANICE = rgdal::readOGR(file.path(.datadir,"stanice.shp"), "stanice")
+UZIVANI = base::readRDS(file.path(.datadir,"uzivani/06_16/uzivani_na_rm.rds"))
+# METEO
