@@ -1,0 +1,22 @@
+---
+title: "CatCa package"
+output: github_document
+---
+
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Balík pro podporu projektu Voda-Sucho
+
+- zpřístupňuje datasety prostřednictvím lokálních cest
+- obsahuje funkce pro práci s UPOV-Bilanem
+
+Pro instalaci použij
+
+```{r, eval=FALSE}
+devtools::install_github("KVHEM/CatCa")
+```
+
