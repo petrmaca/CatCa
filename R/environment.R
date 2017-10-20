@@ -12,22 +12,38 @@ where <- if(.Platform[["OS.type"]] == 'unix') (Sys.info()['nodename']) else (Sys
 
 switch(where,
          'match' = {
-           .datadir = "/home/owc/RUserGroup/data/"
+           .datadir = "/home/owc/BILAN_UPOV/used_data/"
+           .workdir = "/home/owc/RUserGroup/data/"
          },
          'desrt' = {
            .datadir <- "/media/mha/Windows/OwnCloud/RUserGroup/data/"
            .workdir <- '/home/hanel/KVHEM/Rusergroup/code/'
          },
          'DESKTOP-444RM63' = {
-           .datadir <- "C:/Users/PetrP/ownCloud/data/used_data/"
-           .workdir <- "C:/Users/PetrP/Documents/BILAN_OWNCL/"
-         }
+           .datadir <- "C://Users//PetrP//ownCloud//data//used_data//"
+           .workdir <- "C://Users//PetrP//Documents//BILAN_OWNCL//"
+         }, 
+       "LEST" = {
+         .datadir = "C://testR//data//"
+         .workdir = "C://testR//"
+       }
 
 )
 
-assign('.datadir', .datadir, envir = .GlobalEnv)
-assign('.workdir', .workdir, envir = .GlobalEnv)
+  if (is.null(.datadir)) {
+    .datadir = NA
+    warning('Pocitac ', where, 'nenalezen v environment.R - data nedostupna!\n Uprav environment.R a push na github.com/KVHEM/CatCa')
+    }
+
+  if (is.null(.workdir)) {
+    .workdir = getwd()
+    warning('Pocitac ', where, 'nenalezen v environment.R - pracovni adresar nastaven automaticky!')
+  }
+
+  assign('.datadir', .datadir, envir = .GlobalEnv)
+  assign('.workdir', .workdir, envir = .GlobalEnv)
 }
+
 
 .onLoad <- function(libname, pkgname) {
   give_paths()

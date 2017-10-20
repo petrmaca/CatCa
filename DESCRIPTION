@@ -2,8 +2,8 @@ Package: CatCa
 Type: Package
 Title: The package serves as proxy for CZ waterbodies calibration with BILAN model
 Version: 0.1.0
-Author: Petr Pavlik
-Maintainer: Petr Pavlik <pavlikpetr@fzp.czu.cz>
+Author: Petr Pavlik, Martin Hanel
+Maintainer: Petr Pavlik <pavlikpetr@fzp.czu.cz>, Martin Hanel <hanel@fzp.czu.cz>
 Description: Contains functions for calibration based both on the order of waterbody in cascade 
   and unique identifier of the waterbody.
 License: What license is it under?
