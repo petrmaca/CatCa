@@ -1,12 +1,16 @@
-#' Assign the global paths
+#' Načte globální cesty
 #'
-#'
-#' Assign \code{.datadir} (owncloud with the data) and \code{.workdir} to be used as data and working directory.
-#'
-#' @return
+#' @description Načte proměnné \code{.datadir} (synchronizovaná owncloud složka "used_data" z BILAN_UPOV) a \code{.workdir} (zatím nevyužito) na základě jména počítače. Před použitím je nutné PC registrovat - buď úpravou kódu na githubu nebo emailem na \email{hanel@fzp.czu.cz} ve struktuře
+#' \preformatted{
+#' jmeno_PC = { 
+#'   .datadir = 'cesta do used_data' 
+#'   .workdir = 'pracovni cesta' 
+#' } 
+#' }
+#' 
+#' @usage give_paths
+#' @return Přiřadí do \code{.GlobalEnv} proměnné \code{.datadir} a \code{.workdir}
 #' @export give_paths
-#'
-#' @examples
 give_paths <- function(){
 where <- if(.Platform[["OS.type"]] == 'unix') (Sys.info()['nodename']) else (Sys.getenv('COMPUTERNAME'))
 
@@ -40,12 +44,16 @@ switch(where,
     warning('Pocitac ', where, 'nenalezen v environment.R - pracovni adresar nastaven automaticky!')
   }
 
+  Sys.setenv(.datadir = .datadir, .workdir = .workdir)
   assign('.datadir', .datadir, envir = .GlobalEnv)
   assign('.workdir', .workdir, envir = .GlobalEnv)
 }
 
 
+
 .onLoad <- function(libname, pkgname) {
+  
   give_paths()
   invisible()
 }
+

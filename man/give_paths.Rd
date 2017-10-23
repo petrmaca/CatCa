@@ -2,10 +2,19 @@
 % Please edit documentation in R/environment.R
 \name{give_paths}
 \alias{give_paths}
-\title{Assign the global paths}
+\title{Načte globální cesty}
 \usage{
-give_paths()
+give_paths
+}
+\value{
+Přiřadí do \code{.GlobalEnv} proměnné \code{.datadir} a \code{.workdir}
 }
 \description{
-Assign \code{.datadir} (owncloud with the data) and \code{.workdir} to be used as data and working directory.
+Načte proměnné \code{.datadir} (synchronizovaná owncloud složka "used_data" z BILAN_UPOV) a \code{.workdir} (zatím nevyužito) na základě jména počítače. Před použitím je nutné PC registrovat - buď úpravou kódu na githubu nebo emailem na \email{hanel@fzp.czu.cz} ve struktuře
+\preformatted{
+jmeno_PC = { 
+  .datadir = 'cesta do used_data' 
+  .workdir = 'pracovni cesta' 
+} 
+}
 }

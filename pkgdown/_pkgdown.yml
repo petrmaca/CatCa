@@ -1,0 +1,14 @@
+navbar:
+  type: default
+  left:
+    - icon: fa-home fa-lg
+      href: index.html
+    - text: "Funkce / data"
+      href: reference/index.html
+  right:
+    - icon: fa-github fa-lg
+      href: https://github.com/KVHEM/CatCa
+
+template:
+  params:
+    bootswatch: yeti
