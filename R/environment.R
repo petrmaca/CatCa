@@ -17,11 +17,15 @@ where <- if(.Platform[["OS.type"]] == 'unix') (Sys.info()['nodename']) else (Sys
 switch(where,
          'match' = {
            .datadir = "/home/owc/BILAN_UPOV/used_data/"
-           .workdir = "/home/owc/RUserGroup/data/"
+           .workdir = ""
          },
+        'adam' = {
+          .datadir = "/home/adam/Shared/BILAN_UPOV/used_data"
+          .workdir = ""
+        },  
          'desrt' = {
            .datadir <- "/media/mha/Windows/OwnCloud/RUserGroup/data/"
-           .workdir <- '/home/hanel/KVHEM/Rusergroup/code/'
+           .workdir <- ''
          },
          'DESKTOP-444RM63' = {
            .datadir <- "C://Users//PetrP//ownCloud//data//used_data//"
