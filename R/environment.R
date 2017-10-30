@@ -24,7 +24,7 @@ switch(where,
           .workdir = ""
         },  
          'desrt' = {
-           .datadir <- "/media/mha/Windows/OwnCloud/RUserGroup/data/"
+           .datadir <- "/home/owc/BILAN_UPOV/used_data/"
            .workdir <- ''
          },
          'DESKTOP-444RM63' = {
