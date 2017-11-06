@@ -117,7 +117,7 @@ Data = function(...){
             kraje = rgdal::readOGR(file.path(.datadir, "webapp_data/geo/kraje.shp"))
             okresy = rgdal::readOGR(file.path(.datadir, "webapp_data/geo/okresy.shp"))
             
-            popis = read.table(file.path(.datadir, 'webapp_data/E_ISVS$UTV_POV.txt',encoding = 'UTF-8', header = TRUE, sep=';'))
+            popis = read.table(file.path(.datadir, 'webapp_data/E_ISVS$UTV_POV.txt'),encoding = 'UTF-8', header = TRUE, sep=';')
             BM = readRDS(file.path(.datadir, 'webapp_data/mbilan/bilan_month_ep.rds'))
             BM.long = readRDS(file.path(.datadir, 'webapp_data/mbilan/bilan_month_long.rds'))
             pars = readRDS(file.path(.datadir, 'webapp_data/pars/pars.rds'))
