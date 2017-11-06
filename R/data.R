@@ -51,7 +51,7 @@
 #' **UZIV79mm** (data.table): užívání 1979-2016 v mm/mes
 #'  * ?
 #'  
-#' @section Data(webapp_geo):
+#' @section Data(webapp_data):
 #' 
 #' **JEZERA**
 #' * ?
@@ -99,13 +99,6 @@ Data = function(...){
          'uziv79' = {
            UZIV79 = readRDS(file.path(.datadir, 'uzivani/79_15/uzivani_upovid.rds'))
            UZIV79mm = readRDS(file.path(.datadir, 'uzivani/79_15/uzivani_upovid_mm.rds'))
-         },
-         
-         'webapp_geo' = {
-           REKY = rgdal::readOGR(file.path(.datadir,"webapp_geo/reky.shp"), "reky")
-           JEZERA = rgdal::readOGR(file.path(.datadir,"webapp_geo/jezera.shp"), "jezera")
-           POVODI = rgdal::readOGR(file.path(.datadir,"webapp_geo/povodi.shp"), "povodi")
-           STANICE = rgdal::readOGR(file.path(.datadir,"webapp_geo/stanice.shp"), "stanice")
          },
          
           'webapp_data' = {

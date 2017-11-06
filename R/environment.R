@@ -52,7 +52,6 @@ switch(where,
     warning('Pocitac ', where, 'nenalezen v environment.R - pracovni adresar nastaven automaticky!')
   }
 
-  Sys.setenv(.datadir = .datadir, .workdir = .workdir)
   assign('.datadir', .datadir, envir = .GlobalEnv)
   assign('.workdir', .workdir, envir = .GlobalEnv)
 }
