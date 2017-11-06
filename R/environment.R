@@ -34,6 +34,10 @@ switch(where,
        "LEST" = {
          .datadir = "C://testR//data//"
          .workdir = "C://testR//"
+       },
+       'IRINA' = {
+         .datadir = "C:\\Users\\Irina\\ownCloud\\Shared\\BILAN_UPOV\\used_data"
+         .workdir = ""
        }
 
 )
