@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # History files
 .Rhistory
 .Rapp.history
@@ -29,13 +28,8 @@ vignettes/*.pdf
 /data/
 /intro/
 /poznamky/
-.Rproj.user
 data
-=======
-.Rproj.user
-.Rhistory
 .RData
 .Ruserdata
-*.Rproj
 man/
->>>>>>> f9f6b8fed77e5b02c371df8888aa3880ae008969
+
