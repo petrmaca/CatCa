@@ -35,6 +35,10 @@ switch(where,
          .datadir = "/home/owc/BILAN_UPOV/used_data/"
          .workdir = ""
        },
+       "bastap-pc-01" = {
+         .datadir = "D:\\ownCloud\\Shared\\BILAN_UPOV\\used_data"
+         .workdir = ""
+       },
 
        "LEST" = {
          .datadir = "C://testR//data//"
