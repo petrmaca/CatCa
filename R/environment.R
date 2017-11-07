@@ -35,6 +35,7 @@ switch(where,
          .datadir = "/home/owc/BILAN_UPOV/used_data/"
          .workdir = ""
        },
+
        "LEST" = {
          .datadir = "C://testR//data//"
          .workdir = "C://testR//"

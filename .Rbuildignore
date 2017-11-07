@@ -1,2 +1,7 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
+<<<<<<< HEAD
+=======
+^docs$
+^pkgdown$
+>>>>>>> f9f6b8fed77e5b02c371df8888aa3880ae008969
