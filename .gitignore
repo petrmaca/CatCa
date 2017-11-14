@@ -32,5 +32,5 @@ data
 .RData
 .Ruserdata
 man/
-
+prep/
 .Rproj.user
