@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Function reference • CatCa</title>
+<title>Prevody mezi vyskami a objemy — q2mm_day • CatCa</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -37,7 +37,7 @@
   </head>
 
   <body>
-    <div class="container template-reference-index">
+    <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -78,94 +78,63 @@
       </header>
 
       <div class="row">
-  <div class="col-md-9">
+  <div class="col-md-9 contents">
     <div class="page-header">
-      <h1>
-        Reference
-        <small>version&nbsp;0.1.1</small>
-      </h1>
+    <h1>Prevody mezi vyskami a objemy</h1>
     </div>
 
-    <div class="contents">
-      <table class="ref-index">
+    
+    <p>Prevody mezi vyskami a objemy</p>
+    
 
-      <colgroup>
-        <col class="alias" />
-        <col class="title" />
-      </colgroup>
+    <pre class="usage"><span class='fu'>q2mm_day</span>(<span class='no'>q</span>, <span class='no'>id</span>, <span class='no'>...</span>)
 
-      <tbody>
-        <tr>
-          <th colspan="2">
-            <h2 id="section-all-functions" class="hasAnchor"><a href="#section-all-functions" class="anchor"></a>All functions</h2>
-            <p class="section-desc"></p>
-          </th>
-        </tr>
-        <tr>
-          <!--  -->
-          <td>
-            <p><code><a href="A.html">A</a></code> </p>
-          </td>
-          <td><p>Zjisti plochu povodi v km2</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="Data.html">Data</a></code> </p>
-          </td>
-          <td><p>Nahraj data</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="MZP.html">MZP</a></code> </p>
-          </td>
-          <td><p>Vypocti minimalni zustatkovy prutok</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="ch.html">ch</a></code> </p>
-          </td>
-          <td><p>Extrahuj z tabulky CHARS</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="char.html">char</a></code> </p>
-          </td>
-          <td><p>Ziskej charakteristiky pro UPOV</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="give_paths.html">give_paths</a></code> </p>
-          </td>
-          <td><p>Načte globální cesty</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="q2mm_day.html">q2mm_day</a></code> <code><a href="q2mm_day.html">mm_day2q</a></code> <code><a href="q2mm_day.html">u2mm_month</a></code> </p>
-          </td>
-          <td><p>Prevody mezi vyskami a objemy</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="qmd.html">qmd</a></code> </p>
-          </td>
-          <td><p>Extrahuj m-denni vody z tabulky chars</p></td>
-        </tr><tr>
-          <!--  -->
-          <td>
-            <p><code><a href="showme.html">showme</a></code> </p>
-          </td>
-          <td><p>Show UPOVS cascade</p></td>
-        </tr>
-      </tbody>
-      </table>
-    </div>
+<span class='fu'>mm_day2q</span>(<span class='no'>mm</span>, <span class='no'>id</span>, <span class='no'>...</span>)
+
+<span class='fu'>u2mm_month</span>(<span class='no'>u</span>, <span class='no'>id</span>, <span class='no'>...</span>)</pre>
+    
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a> Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>q</th>
+      <td><p>odtok v m3/s</p></td>
+    </tr>
+    <tr>
+      <th>id</th>
+      <td><p>UPOV_ID</p></td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td><p>parametry pro A (tj. momentalne upov_only)</p></td>
+    </tr>
+    <tr>
+      <th>mm</th>
+      <td><p>odtok v mm</p></td>
+    </tr>
+    <tr>
+      <th>u</th>
+      <td><p>uzivani v tis. m3</p></td>
+    </tr>
+    </table>
+    
+    <h2 class="hasAnchor" id="functions"><a class="anchor" href="#functions"></a>Functions</h2>
+
+    <ul>
+<li><p><code>mm_day2q</code>:</p></li>
+<li><p><code>u2mm_month</code>:</p></li>
+</ul>
+    
+
   </div>
-
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
-      <li><a href="#section-all-functions">All functions</a></li>
-    </ul>
+      <li><a href="#arguments">Arguments</a></li>
+      
+      <li><a href="#functions">Functions</a></li>
+          </ul>
+
   </div>
 </div>
 

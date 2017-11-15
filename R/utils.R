@@ -90,7 +90,10 @@ char = function(id){
 #'
 #' @examples
 #' ch(Qa)
+#' 
+#' \dontrun{
 #' ch(Qa)(id = c('BER_0100', 'BER_0010'))
+#' }
 ch = function(...){
   n = c(as.character(substitute(list(...))[-1L]))
   function(id){
