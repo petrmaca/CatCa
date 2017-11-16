@@ -39,6 +39,10 @@ switch(where,
          .datadir = "D:\\ownCloud\\Shared\\BILAN_UPOV\\used_data"
          .workdir = ""
        },
+       "HERMANOVSKY-01" = {
+         .datadir = "D://muj_cloud//Shared//BILAN_UPOV//used_data"
+         .workdir = ""
+       },
 
        "LEST" = {
          .datadir = "C://testR//data//"
