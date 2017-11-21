@@ -62,7 +62,7 @@ Umožňuje přistupovat k datasetům ze synchronizované owncloud složky "used_
 
 \strong{TABNAD} (data.table): Tabulka charakteristik nadrží
 
-\strong{TABREKY} (data.table): Tabulka delek rek pro HYPE v m
+\strong{TABREKY} (data.table): Tabulka delek rek pro HYPE v \link{m}
 }
 
 \section{Data(uziv06)}{

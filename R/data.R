@@ -38,7 +38,8 @@
 #'    
 #' **TABNAD** (data.table): Tabulka charakteristik nadrží
 #' 
-#' **TABREKY** (data.table): Tabulka delek rek pro HYPE v m
+#' 
+#' **TABREKY** (data.table): Tabulka delek rek pro HYPE v [m]
 #' 
 #' @section Data(uziv06):
 #' 
