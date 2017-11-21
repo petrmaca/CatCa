@@ -37,10 +37,13 @@
 #'  * TO:
 #'    
 #' **TABNAD** (data.table): Tabulka charakteristik nadrží
+#'  * UPOV_ID - UPOV_ID
 #' 
-#' 
-#' **TABREKY** (data.table): Tabulka delek rek pro HYPE v [m]
-#' 
+#' **TABREKY** (data.table): Tabulka delek rek pro HYPE
+#'  * UPOV_ID - UPOV_ID
+#'  * L_HTOK: delka hlavniho toku v metrech
+#'  * L_VTOK: delka vedlejsich toku v metrech
+#'  
 #' @section Data(uziv06):
 #' 
 #' **UZIV06** (data.table): užívání 2006-2016 v tis.m3/mes 
