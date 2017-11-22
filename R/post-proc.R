@@ -58,7 +58,7 @@ bilan_agg = function(){
     
   }
   
-  names(M) = gsub('\\.rds', '', dir())
+  names(M) = gsub('\\.rds', '', d)
   BM = rbindlist(M, idcol = 'UPOV_ID')
   
   # names(W) = gsub('\\.rds', '', dir())
@@ -91,7 +91,7 @@ indicators = function(SPI_vars = c('P', 'R', 'RM', 'BF'), SPEI_vars = c('PE'), D
   
   message('Pocitam indikatory.')
   setwd(file.path(.datadir, 'postproc_stable'))
-  BM = readRDS('bilan_month.rds')
+  BM = data.table(readRDS('bilan_month.rds'))
   
   # SPI
   
@@ -111,10 +111,13 @@ indicators = function(SPI_vars = c('P', 'R', 'RM', 'BF'), SPEI_vars = c('PE'), D
   names(S) = paste0('SPI_', c(1, 3, 6, 12))
   S = rbindlist(S, idcol = 'IID')
   
-  setwd(file.path(.datadir, 'postproc'))
+  setwd(file.path(.datadir, 'indikatory'))
   saveRDS(SPI, 'spi.rds')
   
   # SPEI
+  
+  
+  # PDSI
   
   # dV
     
